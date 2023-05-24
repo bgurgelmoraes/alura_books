@@ -1,0 +1,39 @@
+.rodape{
+    display: flex;
+    gap: 12%;
+}
+
+.rodape__alura{
+    padding: 1em 0 2em 2em;
+    color: var(--preto);
+}
+
+.rodape__colunas{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape__alura{
+        font-size: 24px;
+    }
+
+    .rodape__colunas{
+        display: flex;
+        padding: 2em 0;
+        gap: 0 3em;
+    }
+
+    .rodape__colunas__titulo{
+        font-size: 14px;
+        color: var(--cinza);
+        margin-bottom: 2em;
+    }
+
+    .rodape__colunas__item{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+        font-size: 14px;
+    }
+}

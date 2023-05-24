@@ -1,0 +1,68 @@
+.contato{
+    padding: 1em 2em;
+    background-color: var(--branco);
+}
+
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul-degrade);
+}
+
+.contato__texto{
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+.contato__cadastrar__email{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border: 0.5px;
+    border-style: solid;
+    border-color: var(--azul-texto);
+    border-radius: 25px;
+    color: var(--azul-texto);
+}
+.contato__cadastrar__email::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul-texto);
+    text-align:justify;
+    text-indent: 3em;
+    background: url("../img/Envelope.svg") no-repeat;
+    background-position: 1em;
+    width: 80%;   
+}
+
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        padding: 1em 10vw 2em 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato__descricao{
+        display: flex;
+        flex-direction: column;
+        padding: 0 3em 0 0;
+        width: 30%;
+    }
+
+    .contato__titulo{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .contato__texto{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .contato__cadastrar__email{
+        height: 2em;
+        width: 30%;
+    }
+}
